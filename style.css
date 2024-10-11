@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.galeria{
+    margin: 2em;
+    display: flex;
+    height: 20em;
+    gap: 0.1em;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center center;/* centralizando tanto na vertical quanto na horizontal*/
+    transition:all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.galeria div:hover{
+    flex: 7;
+}
+
+.galeria:hover div:not(:hover){/*aaaaaaaaaaaaaaaaaaaaaa*/
+filter: grayscale(100%) sepia(50%) invert(100%);
+
+}
